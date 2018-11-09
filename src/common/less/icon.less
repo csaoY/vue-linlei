@@ -1,0 +1,19 @@
+
+.bg-image(@url){
+  background-image:~"url(@{url}@2x.png)";
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+    background-image:~"url(@{url}@3x.png)";
+  }
+}
+@main-color:#25c6a6;
+@black:#333;
+/*.w(@url){
+  width:@{url}'px';
+}
+.h(@url){
+  height:@{url}'px';
+}*/
+@light-gray:#999;
+.bg(@url){
+  background-color:@url;
+}
